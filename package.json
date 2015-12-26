@@ -1,0 +1,27 @@
+{
+  "name": "assemble-scaffold",
+  "version": "1.0.0",
+  "description": "Scaffold for an assemble based web site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefanwalther/assemble-scaffold.git"
+  },
+  "keywords": [
+    "assemble"
+  ],
+  "author": "Stefan Walther",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stefanwalther/assemble-scaffold/issues"
+  },
+  "homepage": "https://github.com/stefanwalther/assemble-scaffold#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "chai-as-promised": "^5.2.0",
+    "mocha": "^2.3.4"
+  }
+}
