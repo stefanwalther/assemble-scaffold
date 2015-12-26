@@ -1,4 +1,8 @@
-The goal of this project is to create a nice scaffold using Assemble which can then be used in multiple projects with very little configuration.
+[Assemble](https://github.com/assemble/assemble.git) seems to be the most promising static site generator if you prefer to use JavaScript. The entire solution has been completely rewritten in 2015, now (as of 12/2015) the new version 0.6.0 is available.
+
+This project is an attempt to verify if *assemble* fits my needs to create a bit more complex website based on a static website generator.
+
+The **goal of this project** is to create a nice scaffold using Assemble which can then be used in multiple projects with very little configuration.
 
 ### Status so far
 What's planned (not everything covered right now):
