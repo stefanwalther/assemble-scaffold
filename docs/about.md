@@ -4,8 +4,7 @@ This project is an attempt to verify if *assemble* fits my needs to create a bit
 
 The **goal of this project** is to create a nice scaffold using Assemble which can then be used in multiple projects with very little configuration.
 
-### Status so far
-What's planned (not everything covered right now):
+### Planned features:
 
 - [ ] Markdown conversion
 - [ ] Cleaning the build directory
@@ -13,14 +12,18 @@ What's planned (not everything covered right now):
 - [ ] Error notification
 - Basic Setup:
 	- [ ] Copying site assets
-	- [ ] Fetching external content
+	- [ ] Fetching external content (mainly from GitHub pages)
 	- [x] Less conversion
-	- [ ] Html minification
 	- [x] CSS minification
+	- [ ] Html minification
 - Different:
 	- [ ] layouts
 	- [ ] content types
 	- [ ] collections
+- Validation:
+	- [ ] CSS Lint
+	- [ ] Html Lint
+	- [ ] Link validation
 - Dynamic loading of:
 	- [ ] handlebar templates
 	- [ ] partials
@@ -28,6 +31,8 @@ What's planned (not everything covered right now):
 - Site features:
 	- [ ] Tags
 	- [ ] Permalinks
-	- [ ] Comments
+	- [ ] Comments, either linking to GitHub or to Disqus
 	- [ ] Collections
+- Logging
+	- [ ] Need good logging to see if everything went well
 - Full test coverage to ensure that everything continues to work
