@@ -16,9 +16,12 @@ The **goal of this project** is to create a nice scaffold using Assemble which c
 	- [x] Less conversion
 	- [x] CSS minification
 	- [ ] Html minification
+- Content Types
+	- [ ] Article
+	- [ ] Blog
+	- [ ] Archive
 - Different:
 	- [ ] layouts
-	- [ ] content types
 	- [ ] collections
 - Validation:
 	- [ ] CSS Lint
@@ -29,6 +32,7 @@ The **goal of this project** is to create a nice scaffold using Assemble which c
 	- [ ] partials
 	- [ ] plugins
 - Site features:
+	- [ ] Lunr search
 	- [ ] Tags
 	- [ ] Permalinks
 	- [ ] Comments, either linking to GitHub or to Disqus
