@@ -20,6 +20,7 @@ The **goal of this project** is to create a nice scaffold using Assemble which c
 	- [ ] Article
 	- [ ] Blog
 	- [ ] Archive
+	- [ ] Projects
 - Different:
 	- [ ] layouts
 	- [ ] collections
@@ -27,16 +28,31 @@ The **goal of this project** is to create a nice scaffold using Assemble which c
 	- [ ] CSS Lint
 	- [ ] Html Lint
 	- [ ] Link validation
+	- [ ] Front matter validation & defaults
 - Dynamic loading of:
 	- [ ] handlebar templates
 	- [ ] partials
 	- [ ] plugins
+- Single page features
+	- [ ] Conditional table of contents
+	- [ ] Code formatting
+	- [ ] Hybrid formatting (.md + .html)
+	- [ ] Responsive images
 - Site features:
 	- [ ] Lunr search
 	- [ ] Tags
 	- [ ] Permalinks
 	- [ ] Comments, either linking to GitHub or to Disqus
 	- [ ] Collections
+	- [ ] Sitemap
+	- [ ] Aliases for pages
+	- [ ] RSS generator
+	- [ ] Related posts
+- Api documentation integration
+	- [ ] Integrate pages with JSDoc/ESDoc output
+- Publishing process
+	- [ ] Auto versioning
+	- [ ] Auto upload to Amazon S3 
 - Logging
 	- [ ] Need good logging to see if everything went well
 - Full test coverage to ensure that everything continues to work
