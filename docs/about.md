@@ -38,7 +38,7 @@ The **goal of this project** is to create a nice scaffold using Assemble which c
 	- [ ] partials
 	- [ ] plugins
 - SEO
-	- [ ] 
+	- [ ] Include excerpt
 - Single page features
 	- [ ] Conditional table of contents
 	- [ ] Code formatting

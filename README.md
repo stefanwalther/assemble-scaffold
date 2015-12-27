@@ -12,36 +12,74 @@ This project is an attempt to verify if _assemble_ fits my needs to create a bit
 
 The **goal of this project** is to create a nice scaffold using Assemble which can then be used in multiple projects with very little configuration.
 
-### Status so far
-
-What's planned (not everything covered right now):
+### Planned features:
 
 * [ ] Markdown conversion
-* [ ] Cleaning the build directory
+* [x] Cleaning the build directory
 * [ ] Error handling to ensure that everything went well
 * [ ] Error notification
 * Basic Setup:
   - [ ] Copying site assets
-  - [ ] Fetching external content
+  - [ ] Fetching external content (mainly from GitHub pages)
   - [x] Less conversion
-  - [ ] Html minification
   - [x] CSS minification
+  - [x] CSS sourcemaps
+  - [ ] Html minification
+
+* Content Types
+  - [ ] Article
+  - [ ] Blog
+  - [ ] Archive
+  - [ ] Projects
 
 * Different:
   - [ ] layouts
-  - [ ] content types
   - [ ] collections
+
+* Validation:
+  - [ ] CSS Lint
+  - [ ] Html Lint
+  - [ ] Link validation
+  - [ ] Front matter validation & defaults
+
+* Optimization
+  - [ ] Remove unused CSS
+  - [ ] Uglify JavaScript files
 
 * Dynamic loading of:
   - [ ] handlebar templates
   - [ ] partials
   - [ ] plugins
 
+* SEO
+  - [ ] Include excerpt
+* Single page features
+  - [ ] Conditional table of contents
+  - [ ] Code formatting
+  - [ ] Hybrid formatting (.md + .html)
+  - [ ] Responsive images
+
 * Site features:
+  - [ ] Lunr search
   - [ ] Tags
   - [ ] Permalinks
-  - [ ] Comments
+  - [ ] Comments, either linking to GitHub or to Disqus
   - [ ] Collections
+  - [ ] Sitemap
+  - [ ] Aliases for pages
+  - [ ] RSS generator
+  - [ ] Related posts
+  - [ ] Favicons
+
+* Api documentation integration
+  - [ ] Integrate pages with JSDoc/ESDoc output
+
+* Publishing process
+  - [ ] Auto versioning
+  - [ ] Auto upload to Amazon S3
+
+* Logging
+  - [ ] Need good logging to see if everything went well
 * Full test coverage to ensure that everything continues to work
 
 ## Install
