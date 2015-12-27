@@ -42,7 +42,17 @@ describe( "assemble-scaffold", function () {
 			expect( err ).to.not.exist;
 			expect( fs.existsSync(path.join(__dirname, "./../.build/assets/css/variables.css")) ).to.be.false;
 			done();
-		})
+		});
+	} );
+
+	it( "copies assets", function ( done ) {
+		assembleScaffold.runTask("assets", function ( err ) {
+			expect( err ).to.not.exist;
+			expect( fs.existsSync(path.join(__dirname, "./../.build/assets/assets-root.md")) ).to.be.true;
+			expect( fs.existsSync(path.join(__dirname, "./../.build/assets/images/a.png")) ).to.be.true;
+			expect( fs.existsSync(path.join(__dirname, "./../.build/assets/images/sub/y.png")) ).to.be.true;
+			done();
+		});
 	} );
 
 	it( "runs", function ( done ) {
@@ -51,7 +61,5 @@ describe( "assemble-scaffold", function () {
 			done();
 		});
 	} );
-
-
 
 } );

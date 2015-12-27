@@ -19,7 +19,7 @@ The **goal of this project** is to create a nice scaffold using Assemble which c
 * [ ] Error handling to ensure that everything went well
 * [ ] Error notification
 * Basic Setup:
-  - [ ] Copying site assets
+  - [x] Copying site assets
   - [ ] Fetching external content (mainly from GitHub pages)
   - [x] Less conversion
   - [x] CSS minification
