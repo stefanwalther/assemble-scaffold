@@ -1,10 +1,12 @@
 {
   "name": "assemble-scaffold",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Scaffold for an assemble based web site.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha test",
+    "test:unit": "mocha test/unit",
+    "eslint": "eslint ./lib"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,18 @@
   "devDependencies": {
     "chai": "^3.4.1",
     "chai-as-promised": "^5.2.0",
+    "eslint": "^1.10.3",
+    "istanbul": "^0.4.1",
     "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "assemble": "github:assemble/assemble#0.7.0",
+    "extend": "^3.0.0",
+    "gulp-debug": "^2.1.2",
+    "gulp-extname": "^0.2.0",
+    "gulp-less": "^3.0.5",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "js-yaml": "^3.4.6"
   }
 }

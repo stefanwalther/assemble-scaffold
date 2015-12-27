@@ -23,9 +23,9 @@ What's planned (not everything covered right now):
 * Basic Setup:
   - [ ] Copying site assets
   - [ ] Fetching external content
-  - [ ] Less conversion
+  - [x] Less conversion
   - [ ] Html minification
-  - [ ] CSS minification
+  - [x] CSS minification
 
 * Different:
   - [ ] layouts
