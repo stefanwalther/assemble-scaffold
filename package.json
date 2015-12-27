@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "assemble": "github:assemble/assemble#0.7.0",
+    "del": "^2.2.0",
     "extend": "^3.0.0",
     "gulp-debug": "^2.1.2",
     "gulp-extname": "^0.2.0",
