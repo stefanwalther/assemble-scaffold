@@ -8,7 +8,7 @@ The **goal of this project** is to create a nice scaffold using Assemble which c
 What's planned (not everything covered right now):
 
 - [ ] Markdown conversion
-- [ ] Cleaning the build directory
+- [x] Cleaning the build directory
 - [ ] Error handling to ensure that everything went well
 - [ ] Error notification
 - Basic Setup:
