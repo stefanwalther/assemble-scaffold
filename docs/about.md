@@ -15,6 +15,7 @@ The **goal of this project** is to create a nice scaffold using Assemble which c
 	- [ ] Fetching external content (mainly from GitHub pages)
 	- [x] Less conversion
 	- [x] CSS minification
+	- [x] CSS sourcemaps
 	- [ ] Html minification
 - Content Types
 	- [ ] Article
@@ -29,10 +30,15 @@ The **goal of this project** is to create a nice scaffold using Assemble which c
 	- [ ] Html Lint
 	- [ ] Link validation
 	- [ ] Front matter validation & defaults
+- Optimization
+	- [ ] Remove unused CSS
+	- [ ] Uglify JavaScript files
 - Dynamic loading of:
 	- [ ] handlebar templates
 	- [ ] partials
 	- [ ] plugins
+- SEO
+	- [ ] 
 - Single page features
 	- [ ] Conditional table of contents
 	- [ ] Code formatting
@@ -48,6 +54,7 @@ The **goal of this project** is to create a nice scaffold using Assemble which c
 	- [ ] Aliases for pages
 	- [ ] RSS generator
 	- [ ] Related posts
+	- [ ] Favicons
 - Api documentation integration
 	- [ ] Integrate pages with JSDoc/ESDoc output
 - Publishing process
