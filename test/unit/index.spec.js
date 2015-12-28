@@ -8,6 +8,8 @@ var mkdirp = require( "mkdirp" );
 var glob = require("glob");
 var config = require("./config");
 
+chai.use(require("chai-fs"));
+
 var assembleScaffold = null;
 describe( "assemble-scaffold", function () {
 
@@ -81,6 +83,18 @@ describe( "assemble-scaffold", function () {
 			expect( err ).to.not.exist;
 			var g = glob.sync( path.join(config.dest, "./pages/**"), {});
 			expect( g ).to.be.an("array" ).of.length.of.at.least(4);
+			expect( path.join( config.dest, "./pages/about/index.html") ).to.have.content.that.match(/<!DOCTYPE html>/);
+			done();
+		} );
+	} );
+
+	it( "creates articles", function ( done ) {
+		assembleScaffold.runTask( "content:articles", function ( err ) {
+
+			expect( err ).to.not.exist;
+			var g = glob.sync( path.join(config.dest, "./articles/**"), {});
+			expect( g ).to.be.an("array" ).of.length.of.at.least(1);
+			expect( path.join( config.dest, "./articles/article-1.html") ).to.have.content.that.match(/<!DOCTYPE html>/);
 			done();
 		} );
 	} );

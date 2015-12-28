@@ -24,6 +24,7 @@
   "devDependencies": {
     "chai": "^3.4.1",
     "chai-as-promised": "^5.2.0",
+    "chai-fs": "git+https://github.com/peterkc/chai-fs.git",
     "eslint": "^1.10.3",
     "istanbul": "^0.4.1",
     "mocha": "^2.3.4"
