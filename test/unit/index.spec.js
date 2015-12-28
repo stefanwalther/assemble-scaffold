@@ -75,7 +75,7 @@ describe( "assemble-scaffold", function () {
 		} );
 	} );
 
-	it( "creates pages contents", function ( done ) {
+	it.only( "creates pages contents", function ( done ) {
 		assembleScaffold.runTask( "content:pages", function ( err ) {
 
 			expect( err ).to.not.exist;

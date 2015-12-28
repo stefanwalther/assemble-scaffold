@@ -15,7 +15,6 @@ The **goal of this project** is to create a nice scaffold using Assemble which c
 	- [x] Less conversion
 	- [x] CSS minification
 	- [x] CSS sourcemaps
-	- [ ] Html minification
 - Content Types
 	- [x] Pages
 	- [ ] Article
@@ -52,7 +51,7 @@ The **goal of this project** is to create a nice scaffold using Assemble which c
 - Site features:
 	- [ ] Lunr search
 	- [ ] Tags
-	- [ ] Permalinks
+	- [x] Permalinks
 	- [ ] Comments, either linking to GitHub or to Disqus
 	- [ ] Collections
 	- [ ] Sitemap
@@ -64,6 +63,7 @@ The **goal of this project** is to create a nice scaffold using Assemble which c
 	- [ ] Integrate pages with JSDoc/ESDoc output
 - Publishing process
 	- [ ] Auto versioning
+	- [ ] Create summary of published results / changes
 	- [ ] Auto upload to Amazon S3 
 - Logging
 	- [ ] Need good logging to see if everything went well
