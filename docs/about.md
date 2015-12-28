@@ -6,11 +6,10 @@ The **goal of this project** is to create a nice scaffold using Assemble which c
 
 ### Planned features:
 
-- [ ] Markdown conversion
-- [x] Cleaning the build directory
 - [ ] Error handling to ensure that everything went well
 - [ ] Error notification
 - Basic Setup:
+	- [x] Cleaning the build directory
 	- [x] Copying site assets
 	- [ ] Fetching external content (mainly from GitHub pages)
 	- [x] Less conversion
@@ -18,10 +17,14 @@ The **goal of this project** is to create a nice scaffold using Assemble which c
 	- [x] CSS sourcemaps
 	- [ ] Html minification
 - Content Types
+	- [x] Pages
 	- [ ] Article
 	- [ ] Blog
 	- [ ] Archive
 	- [ ] Projects
+- Content Handling
+	- [x] Markdown conversion
+	- [ ] Partials
 - Different:
 	- [ ] layouts
 	- [ ] collections
@@ -33,9 +36,11 @@ The **goal of this project** is to create a nice scaffold using Assemble which c
 - Optimization
 	- [ ] Remove unused CSS
 	- [ ] Uglify JavaScript files
+	- [x] Prettifying Html output
 - Dynamic loading of:
-	- [ ] handlebar templates
-	- [ ] partials
+	- [x] handlebar templates
+	- [x] partials
+	- [x] layouts
 	- [ ] plugins
 - SEO
 	- [ ] Include excerpt
@@ -62,4 +67,5 @@ The **goal of this project** is to create a nice scaffold using Assemble which c
 	- [ ] Auto upload to Amazon S3 
 - Logging
 	- [ ] Need good logging to see if everything went well
-- Full test coverage to ensure that everything continues to work
+- Testing
+	- [ ] Full test coverage to ensure that everything continues to work

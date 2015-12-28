@@ -19,6 +19,12 @@ describe( "assemble-scaffold", function () {
 		expect( assembleScaffold ).to.be.an("object");
 	} );
 
+	it( "tasks are loaded from dir", function ( ) {
+		expect(assembleScaffold.app ).to.be.an("object");
+		expect(assembleScaffold.app.tasks.clean ).to.exist;
+		expect(assembleScaffold.app.tasks["content:pages"] ).to.exist;
+	} );
+
 	/**
 	 * @todo: Add some files before to check ...
 	 */
@@ -54,6 +60,8 @@ describe( "assemble-scaffold", function () {
 			done();
 		});
 	} );
+
+
 
 	it( "runs", function ( done ) {
 		assembleScaffold.run( function ( err ) {
