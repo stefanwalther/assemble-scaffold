@@ -26,7 +26,7 @@ describe( "assemble-scaffold", function () {
 	it( "tasks are loaded from dir", function () {
 		expect( assembleScaffold.app ).to.be.an( "object" );
 		expect( assembleScaffold.app.tasks.clean ).to.exist;
-		expect( assembleScaffold.app.tasks["content:pages"] ).to.exist;
+		expect( assembleScaffold.app.tasks["content:static"] ).to.exist;
 	} );
 
 	it( "cleans up the .build folder", function ( done ) {
@@ -67,7 +67,7 @@ describe( "assemble-scaffold", function () {
 	} );
 
 	it( "creates pages dir", function ( done ) {
-		assembleScaffold.runTask( "content:pages", function ( err ) {
+		assembleScaffold.runTask( "content:static", function ( err ) {
 
 			expect( err ).to.not.exist;
 			expect( fs.existsSync( path.join( config.dest, "./pages" ) ) ).to.be.true;
@@ -76,7 +76,7 @@ describe( "assemble-scaffold", function () {
 	} );
 
 	it( "creates pages contents", function ( done ) {
-		assembleScaffold.runTask( "content:pages", function ( err ) {
+		assembleScaffold.runTask( "content:static", function ( err ) {
 
 			expect( err ).to.not.exist;
 			var g = glob.sync( path.join(config.dest, "./pages/**"), {});
