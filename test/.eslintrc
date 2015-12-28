@@ -1,6 +1,6 @@
 {
   "env": {
-    "es6": true,
+    "es6": false,
     "node": true,
     "mocha": true
   },
@@ -8,9 +8,9 @@
     "modules": true
   },
   "globals": {
-    "chai": false,
-    "sinon": false,
-    "expect": false
+    "chai": true,
+    "sinon": true,
+    "expect": true
   },
   "extends": "eslint:recommended",
   "rules": {

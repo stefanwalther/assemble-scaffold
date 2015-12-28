@@ -86,7 +86,7 @@ describe( "assemble-scaffold", function () {
 	} );
 
 	// Todo: Write this test at the end
-	it.skip( "runs", function ( done ) {
+	it( "runs", function ( done ) {
 		assembleScaffold.run( function ( err ) {
 			expect( err ).to.not.exist;
 			done();
