@@ -22,6 +22,11 @@ var config = {
 			name: "pages",
 			src: path.join( contentDir, "./content/pages/**/*.md"),
 			dest: path.join( buildDir, "./pages")
+		},
+		{
+			name: "articles",
+			src: path.join( contentDir, "./content/articles/**/*.md"),
+			dest: path.join( buildDir, "./articles")
 		}
 	]
 };
