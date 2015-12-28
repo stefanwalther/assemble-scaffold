@@ -17,7 +17,7 @@ The **goal of this project** is to create a nice scaffold using Assemble which c
 	- [x] CSS sourcemaps
 - Content Types
 	- [x] Pages
-	- [ ] Article
+	- [x] Article
 	- [ ] Blog
 	- [ ] Archive
 	- [ ] Projects
