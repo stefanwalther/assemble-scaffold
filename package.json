@@ -30,6 +30,7 @@
     "mocha": "^2.3.4"
   },
   "dependencies": {
+    "assemble": "*",
     "assemble-permalinks": "github:assemble/assemble-permalinks",
     "del": "^2.2.0",
     "export-files": "^2.1.0",
@@ -42,7 +43,7 @@
     "gulp-prettify": "^0.4.0",
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^1.6.0",
-    "js-yaml": "^3.4.6",
-    "assemble": "*"
+    "helper-markdown": "^0.1.2",
+    "js-yaml": "^3.4.6"
   }
 }
