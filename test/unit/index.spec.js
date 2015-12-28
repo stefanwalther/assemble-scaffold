@@ -5,6 +5,7 @@ var expect = chai.expect;
 var path = require( "path" );
 var fs = require( "fs" );
 var mkdirp = require( "mkdirp" );
+var glob = require("glob");
 var config = require("./config");
 
 var assembleScaffold = null;
@@ -61,6 +62,25 @@ describe( "assemble-scaffold", function () {
 			expect( fs.existsSync( path.join( config.dest, "./assets/data.json" ) ) ).to.be.true;
 			expect( fs.existsSync( path.join( config.dest, "./assets/images/a.png" ) ) ).to.be.true;
 			expect( fs.existsSync( path.join( config.dest, "./assets/images/sub/y.png" ) ) ).to.be.true;
+			done();
+		} );
+	} );
+
+	it( "creates pages dir", function ( done ) {
+		assembleScaffold.runTask( "content:pages", function ( err ) {
+
+			expect( err ).to.not.exist;
+			expect( fs.existsSync( path.join( config.dest, "./pages" ) ) ).to.be.true;
+			done();
+		} );
+	} );
+
+	it( "creates pages contents", function ( done ) {
+		assembleScaffold.runTask( "content:pages", function ( err ) {
+
+			expect( err ).to.not.exist;
+			var g = glob.sync( path.join(config.dest, "./pages/**"), {});
+			expect( g ).to.be.an("array" ).of.length.of.at.least(4);
 			done();
 		} );
 	} );
