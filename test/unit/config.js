@@ -19,6 +19,11 @@ var config = {
 	},
 	collections: [
 		{
+			name: "index",
+			src: path.join( srcDir, "./content/index.hbs"),
+			dest: path.join( buildDir, "./")
+		},
+		{
 			name: "static-pages",
 			src: path.join( srcDir, "./content/static-pages/**/*.md"),
 			dest: path.join( buildDir, "./static")
@@ -29,8 +34,8 @@ var config = {
 			dest: path.join( buildDir, "./articles")
 		},
 		{
-			name: "pages",
-			src: path.join( srcDir, "./content/pages/**/*.{md,hbs}"),
+			name: "default-pages",
+			src: path.join( srcDir, "./content/default-pages/**/*.{md,hbs}"),
 			dest: path.join( buildDir, "./pages")
 		}
 	]

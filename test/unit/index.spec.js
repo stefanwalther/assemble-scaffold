@@ -78,7 +78,7 @@ describe( "assemble-scaffold", function () {
 	} );
 
 	it( "creates default pages", function ( done ) {
-		assembleScaffold.runTask( "content:pages", function ( err ) {
+		assembleScaffold.runTask( "content:default-pages", function ( err ) {
 
 			expect( err ).to.not.exist;
 			var g = glob.sync( path.join( config.dest, "./pages/**" ), {} );
