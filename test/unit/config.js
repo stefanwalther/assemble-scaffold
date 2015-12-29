@@ -20,13 +20,18 @@ var config = {
 	collections: [
 		{
 			name: "static-pages",
-			src: path.join( srcDir, "./content/pages/**/*.md"),
-			dest: path.join( buildDir, "./pages")
+			src: path.join( srcDir, "./content/static-pages/**/*.md"),
+			dest: path.join( buildDir, "./static")
 		},
 		{
 			name: "articles",
-			src: path.join( srcDir, "./content/articles/**/*.md"),
+			src: path.join( srcDir, "./content/articles/**/*.{md,hbs}"),
 			dest: path.join( buildDir, "./articles")
+		},
+		{
+			name: "pages",
+			src: path.join( srcDir, "./content/pages/**/*.{md,hbs}"),
+			dest: path.join( buildDir, "./pages")
 		}
 	]
 };

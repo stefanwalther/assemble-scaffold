@@ -5,10 +5,10 @@ var expect = chai.expect;
 var path = require( "path" );
 var fs = require( "fs" );
 var mkdirp = require( "mkdirp" );
-var glob = require("glob");
-var config = require("./config");
+var glob = require( "glob" );
+var config = require( "./config" );
 
-chai.use(require("chai-fs"));
+chai.use( require( "chai-fs" ) );
 
 var assembleScaffold = null;
 describe( "assemble-scaffold", function () {
@@ -28,18 +28,18 @@ describe( "assemble-scaffold", function () {
 	it( "tasks are loaded from dir", function () {
 		expect( assembleScaffold.app ).to.be.an( "object" );
 		expect( assembleScaffold.app.tasks.clean ).to.exist;
-		expect( assembleScaffold.app.tasks["content:static"] ).to.exist;
+		expect( assembleScaffold.app.tasks["content:static-pages"] ).to.exist;
 	} );
 
 	it( "cleans up the .build folder", function ( done ) {
-		mkdirp( config.dest , {}, function ( err, made ) {
+		mkdirp( config.dest, {}, function ( err, made ) {
 			expect( err ).to.not.exist;
 			expect( made ).to.exist;
 			assembleScaffold.runTask( "clean", function ( err ) {
 				expect( err ).to.not.exist;
 				done();
 			} )
-		});
+		} );
 	} );
 
 	it( "converts less files to a single .css file", function ( done ) {
@@ -69,21 +69,31 @@ describe( "assemble-scaffold", function () {
 	} );
 
 	it( "creates pages dir", function ( done ) {
-		assembleScaffold.runTask( "content:static", function ( err ) {
+		assembleScaffold.runTask( "content:static-pages", function ( err ) {
 
 			expect( err ).to.not.exist;
-			expect( fs.existsSync( path.join( config.dest, "./pages" ) ) ).to.be.true;
+			expect( fs.existsSync( path.join( config.dest, "./static" ) ) ).to.be.true;
+			done();
+		} );
+	} );
+
+	it( "creates default pages", function ( done ) {
+		assembleScaffold.runTask( "content:pages", function ( err ) {
+
+			expect( err ).to.not.exist;
+			var g = glob.sync( path.join( config.dest, "./pages/**" ), {} );
+			expect( g ).to.be.an( "array" ).of.length.of.at.least( 1 );
 			done();
 		} );
 	} );
 
 	it( "creates pages contents", function ( done ) {
-		assembleScaffold.runTask( "content:static", function ( err ) {
+		assembleScaffold.runTask( "content:static-pages", function ( err ) {
 
 			expect( err ).to.not.exist;
-			var g = glob.sync( path.join(config.dest, "./pages/**"), {});
-			expect( g ).to.be.an("array" ).of.length.of.at.least(4);
-			expect( path.join( config.dest, "./pages/about/index.html") ).to.have.content.that.match(/<!DOCTYPE html>/);
+			var g = glob.sync( path.join( config.dest, "./static/**" ), {} );
+			expect( g ).to.be.an( "array" ).of.length.of.at.least( 4 );
+			expect( path.join( config.dest, "./static/about/index.html" ) ).to.have.content.that.match( /<!DOCTYPE html>/ );
 			done();
 		} );
 	} );
@@ -92,9 +102,9 @@ describe( "assemble-scaffold", function () {
 		assembleScaffold.runTask( "content:articles", function ( err ) {
 
 			expect( err ).to.not.exist;
-			var g = glob.sync( path.join(config.dest, "./articles/**"), {});
-			expect( g ).to.be.an("array" ).of.length.of.at.least(1);
-			expect( path.join( config.dest, "./articles/article-1.html") ).to.have.content.that.match(/<!DOCTYPE html>/);
+			var g = glob.sync( path.join( config.dest, "./articles/**" ), {} );
+			expect( g ).to.be.an( "array" ).of.length.of.at.least( 1 );
+			expect( path.join( config.dest, "./articles/article-1.html" ) ).to.have.content.that.match( /<!DOCTYPE html>/ );
 			done();
 		} );
 	} );
