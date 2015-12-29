@@ -44,6 +44,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^1.6.0",
     "helper-markdown": "^0.1.2",
-    "js-yaml": "^3.4.6"
+    "js-yaml": "^3.4.6",
+    "lodash": "^3.10.1"
   }
 }

@@ -19,7 +19,7 @@ var config = {
 	},
 	collections: [
 		{
-			name: "pages",
+			name: "static-pages",
 			src: path.join( srcDir, "./content/pages/**/*.md"),
 			dest: path.join( buildDir, "./pages")
 		},
