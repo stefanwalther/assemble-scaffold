@@ -1,4 +1,5 @@
 {
+  "root": true,
   "env": {
     "es6": true,
     "node": true,
@@ -65,13 +66,14 @@
       "capIsNewExceptions": ["Router", "Promise"]
     }],
     "new-parens": 2,
-    "quotes": [2, "double"],
+    "quotes": [2, "single"],
     "semi": 2,
     "semi-spacing": [2, {"before": false, "after": true}],
     "space-infix-ops": 2,
+    "space-in-parens": [2, "always"],
     "space-return-throw-case": 2,
     "space-unary-ops": [2, { "words": true, "nonwords": false }],
-    "strict": [2, "function"],
+    "strict": [2, "global"],
     "yoda": [2, "never"]
   }
 }
