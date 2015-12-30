@@ -27,7 +27,7 @@ The **goal of this project** is to create a nice scaffold using Assemble which c
 - Different:
 	- [ ] layouts
 	- [ ] collections
-- Validation:
+- Output validation:
 	- [ ] CSS Lint
 	- [ ] Html Lint
 	- [ ] Link validation
@@ -52,6 +52,7 @@ The **goal of this project** is to create a nice scaffold using Assemble which c
 	- [ ] Lunr search
 	- [ ] Tags
 	- [x] Permalinks
+	- [ ] Permalink configuration per doc (slug)
 	- [ ] Comments, either linking to GitHub or to Disqus
 	- [ ] Collections
 	- [ ] Sitemap

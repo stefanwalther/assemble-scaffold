@@ -118,6 +118,11 @@ describe( 'assemble-scaffold', function () {
 		} );
 	} );
 
+	it( 'skips articles if not defined', function ( done ) {
+		expect( true ).to.equal( false );
+		done();
+	} );
+
 	// Todo: Write this test at the end
 	it( 'runs', function ( done ) {
 		assembleScaffold.run( function ( err ) {
