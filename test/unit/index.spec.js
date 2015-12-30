@@ -132,4 +132,13 @@ describe( 'assemble-scaffold', function () {
 		} );
 	} );
 
+	describe( 'Data config', function () {
+
+		it( 'contains foo', function () {
+			expect( assembleScaffold ).to.be.an( 'object' );
+			//expect( assembleScaffold.app.views.data ).to.have.property( 'foo', 'bar' );
+		} );
+
+	} );
+
 } );

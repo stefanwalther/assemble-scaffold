@@ -9,7 +9,12 @@ var config = {
 	helpers: path.join( srcDir, './helpers/*.js' ),
 	layouts: path.join( srcDir, './templates/layouts/*.hbs' ),
 	partials: path.join( srcDir, './templates/partials/*.hbs' ),
-	data: './data.js',
+	data: {
+		foo: 'bar'
+	},
+	dataFiles: [
+		path.join( __dirname, './data.json' )
+	],
 	css: {
 		src: path.join( srcDir, './less/**/main.less' ),
 		dest: path.join( buildDir, './assets/css' )
