@@ -60,6 +60,9 @@ The **goal of this project** is to create a nice scaffold using Assemble which c
 	- [ ] RSS generator
 	- [ ] Related posts
 	- [ ] Favicons
+	- [ ] robot.txt
+	- [ ] sitemap.xml
+	- [x] Ability to define drafts which then will not be rendered.
 - Api documentation integration
 	- [ ] Integrate pages with JSDoc/ESDoc output
 - Publishing process
