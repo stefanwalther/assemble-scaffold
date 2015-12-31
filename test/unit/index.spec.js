@@ -6,7 +6,7 @@ var path = require( 'path' );
 var fs = require( 'fs' );
 var mkdirp = require( 'mkdirp' );
 var glob = require( 'glob' );
-var config = require( './config' );
+var config = require( './../config/config' );
 
 chai.use( require( 'chai-fs' ) );
 
