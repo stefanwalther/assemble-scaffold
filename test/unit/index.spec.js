@@ -15,11 +15,10 @@ describe( 'assemble-scaffold', function () {
 
 	beforeEach( function ( done ) {
 		assembleScaffold = new AssembleScaffold( config );
-		done();
-		//assembleScaffold.runTask( 'clean', function ( err ) {
-		//	expect( err ).to.not.exist;
-		//	done( err );
-		//} );
+		assembleScaffold.runTask( 'clean', function ( err ) {
+			expect( err ).to.not.exist;
+			done( err );
+		} );
 	} );
 
 	it( 'is an object', function () {
@@ -108,7 +107,7 @@ describe( 'assemble-scaffold', function () {
 		} );
 	} );
 
-	it.only( 'creates articles', function ( done ) {
+	it( 'creates articles', function ( done ) {
 		assembleScaffold.runTask( 'content:articles', function ( err ) {
 
 			expect( err ).to.not.exist;
