@@ -51,7 +51,7 @@ var config = {
 	],
 	browserSync: {
 		port: 8080,
-		startPath: 'static/about/'
+		startPath: 'static/articles/'
 	}
 };
 
