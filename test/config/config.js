@@ -16,6 +16,7 @@ var config = {
 		path.join( __dirname, './data.json' )
 	],
 	css: {
+		watch: path.join( srcDir, './less/**/*.less'),
 		src: path.join( srcDir, './less/**/main.less' ),
 		dest: path.join( buildDir, './assets/css' )
 	},
@@ -47,7 +48,11 @@ var config = {
 			src: path.join( srcDir, './content/default-pages/**/*.{md,hbs}' ),
 			dest: path.join( buildDir, './pages' )
 		}
-	]
+	],
+	browserSync: {
+		port: 8080,
+		startPath: 'static/about/'
+	}
 };
 
 module.exports = config;
