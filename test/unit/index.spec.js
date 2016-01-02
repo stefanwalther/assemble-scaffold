@@ -114,6 +114,8 @@ describe( 'assemble-scaffold', function () {
 			var g = glob.sync( path.join( config.dest, './articles/**' ), {} );
 			expect( g ).to.be.an( 'array' ).of.length.of.at.least( 1 );
 			expect( path.join( config.dest, './articles/article-1.html' ) ).to.have.content.that.match( /<!DOCTYPE html>/ );
+			expect( assembleScaffold.app.views.articles ).to.exist;
+			expect( assembleScaffold.app.views.articles['article-1'] ).to.be.an.object;
 			done();
 		} );
 	} );
