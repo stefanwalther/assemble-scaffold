@@ -21,17 +21,10 @@
     "url": "https://github.com/stefanwalther/assemble-scaffold/issues"
   },
   "homepage": "https://github.com/stefanwalther/assemble-scaffold#readme",
-  "devDependencies": {
-    "chai": "^3.4.1",
-    "chai-as-promised": "^5.2.0",
-    "chai-fs": "git+https://github.com/peterkc/chai-fs.git",
-    "eslint": "^1.10.3",
-    "istanbul": "^0.4.1",
-    "mocha": "^2.3.4"
-  },
   "dependencies": {
     "assemble": "*",
     "assemble-permalinks": "github:assemble/assemble-permalinks",
+    "browser-sync": "^2.10.1",
     "del": "^2.2.0",
     "export-files": "^2.1.0",
     "extend": "^3.0.0",
@@ -48,5 +41,13 @@
     "helper-markdown": "^0.1.2",
     "js-yaml": "^3.4.6",
     "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "chai-as-promised": "^5.2.0",
+    "chai-fs": "git+https://github.com/peterkc/chai-fs.git",
+    "eslint": "^1.10.3",
+    "istanbul": "^0.4.1",
+    "mocha": "^2.3.4"
   }
 }
