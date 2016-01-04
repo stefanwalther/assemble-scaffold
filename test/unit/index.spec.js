@@ -21,7 +21,7 @@ describe( 'assemble-scaffold', function () {
 		} );
 	} );
 
-	it( 'is an object', function () {
+	it.only( 'is an object', function () {
 		expect( assembleScaffold ).to.be.an( 'object' );
 	} );
 

@@ -4,10 +4,10 @@ var config = require( './../config/config' );
 
 var assembleScaffold = new AssembleScaffold( config );
 
-assembleScaffold.runTask( 'defaultserve', function ( err, results ) {
+assembleScaffold.app.build( 'default:watch:css', function ( err, results ) {
 	if ( err ) {
-		console.error( err );
+		console.error( 'Error: ', err );
 	} else {
-		console.log( 'done: ', results);
+		console.log( 'done' );
 	}
 } );
