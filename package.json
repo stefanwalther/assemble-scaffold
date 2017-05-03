@@ -27,27 +27,27 @@
     "del": "^2.2.0",
     "export-files": "^2.1.0",
     "extend": "^3.0.0",
-    "glob": "^6.0.2",
+    "glob": "^7.1.1",
     "gulp-cssnano": "^2.0.0",
-    "gulp-debug": "^2.1.2",
+    "gulp-debug": "^3.1.0",
     "gulp-drafts": "^0.2.0",
     "gulp-extname": "^0.2.0",
     "gulp-less": "^3.0.5",
-    "gulp-prettify": "^0.4.0",
+    "gulp-prettify": "^0.5.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sourcemaps": "^1.6.0",
+    "gulp-sourcemaps": "^2.6.0",
     "gulp-webserver": "^0.9.1",
-    "helper-markdown": "^0.1.2",
+    "helper-markdown": "^0.2.1",
     "js-yaml": "^3.4.6",
-    "lodash": "^3.10.1",
-    "markdown-toc": "^0.12.3"
+    "lodash": "^4.17.4",
+    "markdown-toc": "^1.1.0"
   },
   "devDependencies": {
     "chai": "^3.4.1",
-    "chai-as-promised": "^5.2.0",
+    "chai-as-promised": "^6.0.0",
     "chai-fs": "git+https://github.com/peterkc/chai-fs.git",
-    "eslint": "^1.10.3",
+    "eslint": "^3.19.0",
     "istanbul": "^0.4.1",
-    "mocha": "^2.3.4"
+    "mocha": "^3.3.0"
   }
 }
