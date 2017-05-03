@@ -1,5 +1,7 @@
 # assemble-scaffold
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/stefanwalther/assemble-scaffold.svg)](https://greenkeeper.io/)
+
 > Scaffold for an assemble based web site.
 
 **Work in progress: stay tuned**
